@@ -1,9 +1,21 @@
 #!bin/bash
 #!/usr/bin/env bash
+# This script prints "Best School" 10 times using a while loop
+# For the 9th iteration, it also prints "Hi" on a new line
+
+# Initialize a counter variable
+count=1
+
+# While loop: repeat until count is greater than 10
 while [ $count -le 10 ]; do
-echo "Best School"
-if [ $count -eq 9 ]; then
+  # Print "Best School" every iteration
+  echo "Best School"
+  
+  # If the current iteration is the 9th, print "Hi"
+  if [ $count -eq 9 ]; then
     echo "Hi"
   fi
-count=$((count + 1))
+  
+  # Increment the counter
+  count=$((count + 1))
 done
