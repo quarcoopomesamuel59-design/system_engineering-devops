@@ -1,19 +1,10 @@
 #!bin/bash
 #!/usr/bin/env bash
-# Prints "Best School" 10 times using a while loop; prints "Hi" after the 9th iteration
-
-# Initialize counter
 count=1
-
-# While loop to repeat 10 times
 while [ $count -le 10 ]; do
   echo "Best School"
-
-  # Print "Hi" on the 9th iteration
   if [ $count -eq 9 ]; then
     echo "Hi"
   fi
-
-  # Increment counter
   count=$((count + 1))
 done
